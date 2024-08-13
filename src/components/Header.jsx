@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import useSound from 'use-sound';
 import mp3 from '../sounds/hov.mp3'
 import PageTransition from './TransitionPageAnimationComponent';
+import MobileNavigation from './projects/MobileNav';
 
 
 export default function Header() {
@@ -18,7 +19,11 @@ export default function Header() {
     };
 
     return (
-        <header className='hidden lg:flex fixed top-0.1 w-full bg-black text-gray-300 z-50 mb-36 '>
+
+        <div>
+              <MobileNavigation handleClick={handleClick} />
+
+              <header className='hidden lg:flex fixed top-0.1 w-full bg-black text-gray-300 z-50 mb-36 '>
             <PageTransition isActive={isTransitioning} />
 
             <motion.div
@@ -116,5 +121,7 @@ export default function Header() {
 
             </nav>
         </header>
+        </div>
+        
     )
 }

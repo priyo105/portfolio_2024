@@ -24,6 +24,13 @@ export default function Skills() {
         { icon: './redux.png', name: 'Redux' },
         { icon: './typescript.png', name: 'TypeScript' },
         { icon: './tailwind.png', name: 'Tailwind CSS' },
+        { icon: './react_query.png', name: 'React Query' },
+        { icon: './next.png', name: 'Next JS' },
+
+    ];
+
+    const backendSkills = [
+        { icon: './typescript.png', name: 'TypeScript' },
         { icon: './node.png', name: 'Node JS' },
         { icon: './express.png', name: 'Express JS' },
         { icon: './mongo.png', name: 'Mongo DB' },
@@ -72,14 +79,16 @@ export default function Skills() {
 
             <div className=' gap-4 lg:grid md:grid-cols-2 xl:grid-cols-3 mt-10 justify-evenly p-10 text-center  ml-5 md:ml-20 mr-10 md:mr-20 border-yellow-500 border-2 rounded-3xl'>
                 <Skill icon={TfiMobile} title="Mobile App Development" skills={mobileSkills} />
-                <Skill icon={FaGlobeEurope} title="Web Development" skills={webSkills} />
-                <Skill icon={BsDatabaseFill} title="Data Science" skills={dataScienceSkills} />
+                <Skill icon={FaGlobeEurope} title="Frontend Development" skills={webSkills} />
+                <Skill icon={BsDatabaseFill} title="Backend Development" skills={backendSkills} />
             </div>
 
 
             <div className=' gap-6 lg:grid md:grid-cols-2 xl:grid-cols-3 mt-10 justify-evenly p-10 text-center  ml-5 md:ml-20 mr-10 md:mr-20 border-yellow-500 border-2 rounded-3xl'>
+                <Skill icon={BsDatabaseFill} title="Data Science" skills={dataScienceSkills} />
                 <Skill icon={SiKalilinux} title="Soft Skills" skills={softSkills} />
                 <Skill icon={FaGlobeEurope} title="Tools" skills={tools} />
+
             </div>
         </div>
     );

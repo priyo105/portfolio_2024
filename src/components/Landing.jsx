@@ -12,13 +12,22 @@ import { TiWorld } from 'react-icons/ti';
 import { MdDataset } from 'react-icons/md';
 
 export default function Landing() {
-    return (
 
-        <div  id='home' >
+    const downloadResume = () => {
+        const link = document.createElement('a');
+        link.href = `${process.env.PUBLIC_URL}/cv_2024.pdf`; // Adjust this if the file is located elsewhere.
+        link.download = 'cv_2024.pdf'; // The name of the downloaded file
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+    }
+    return (
+        <div id='home' >
             <div className="flex flex-col lg:flex-row justify-center items-center text-[#D3D3D3] text-3xl lg:text-4xl font-customFont">
                 <motion.img
-                    src='./adnan.png'
-                    className='mt-20  lg:mr-20  w-8/12 lg:w-2/12 opacity-65  grayscale rounded-full border-r-8 border-x-yellow-500'
+                    src='./pic.png'
+                    className='mt-20  lg:mr-20  w-8/12 lg:w-2/12 opacity-75  grayscale rounded-full border-r-8 border-x-yellow-500 '
                     initial={{ filter: 'blur(4px)' }}
                     animate={{ filter: 'blur(0px)', scale: [1, 1.05, 1] }}
                     transition={{ duration: 2, loop: 10 }}
@@ -34,7 +43,7 @@ export default function Landing() {
                         }}
                     />
                     <div className='flex gap-10'>
-                        <button className='w-36 font-customFont text-sm h-12 border mt-10 border-yellow-500 hover:bg-yellow-600 hover:font-bold'>
+                        <button className='w-36 font-customFont text-sm h-12 border mt-10 border-yellow-500 hover:bg-yellow-600 hover:font-bold' onClick={downloadResume}>
                             Download Resume
                         </button>
                         <button className='w-36 font-customFont text-sm h-12 border mt-10 border-orange-700 hover:bg-orange-800 hover:font-bold'>
@@ -42,9 +51,18 @@ export default function Landing() {
                         </button>
                     </div>
                     <div className='flex mt-24 lg:mt-10 gap-5'>
-                        <FaLinkedin className='text-yellow-500  text-4xl hover:text-green-700  hover:cursor-pointer' />
-                        <FaGithub className='text-orange-600  text-4xl hover:text-purple-400 hover:cursor-pointer' />
-                        <FaInstagram className='text-orange-400  text-4xl hover:text-sky-400 hover:cursor-pointer' />
+
+                        <a href="https://www.linkedin.com/in/md-adnan-kamal/">
+                            <FaLinkedin href="https://www.linkedin.com/in/md-adnan-kamal/" className='text-yellow-500  text-4xl hover:text-green-700  hover:cursor-pointer' />
+                        </a>
+
+                        <a href="https://github.com/priyo105">
+                            <FaGithub href='' className='text-orange-600  text-4xl hover:text-purple-400 hover:cursor-pointer' />
+                        </a>
+
+                        <a href="https://www.instagram.com/adnanpriyo07/">
+                            <FaInstagram href='' className='text-orange-600  text-4xl hover:text-purple-400 hover:cursor-pointer' />
+                        </a>
                         <div className=' hidden lg:ml-28 lg:flex p-10 lg:p-0'>
                             <img src='./coffee.gif' className='w-10  h-10' />
                             <p className='text-sm  mt-3 ml-5 font-customFont'>I turn Coffee into Quality code!</p>
@@ -60,14 +78,14 @@ export default function Landing() {
                         <p className='  text-sm  mt-10 ml-5 font-customFont'>I turn Coffee into Quality code !</p>
                     </div>
 
-                    
+
 
                     <div className='mt-5 lg:mt-10 flex'>
                         <FaLocationDot className='text-cyan-700  text-2xl hover:text-purple-400 hover:cursor-pointer' />
                         <p className='text-sm ml-5 font-customFont '>London , United Kingdom</p>
-                   
+
                     </div>
-                    <div className='mt-10 flex p-10 lg:p-0'>
+                    <div className='mt-10 flex p-5 lg:p-0'>
                         <PiBracketsCurlyBold className='text-yellow-300  text-2xl hover:text-purple-400 hover:cursor-pointer' />
                         <p className='text-sm font-semibold ml-5 font-customFont'>Coder</p>
 
@@ -76,7 +94,6 @@ export default function Landing() {
 
                         <FaCodeBranch className='text-green-700 ml-10  text-2xl hover:text-purple-400 hover:cursor-pointer' />
                         <p className='text-sm ml-5 font-mono font-semibold'>Team Player</p>
-
 
                     </div>
 
@@ -87,8 +104,6 @@ export default function Landing() {
 
                         <GiWorld className='text-sky-400 ml-10  text-2xl hover:text-purple-400 hover:cursor-pointer' />
                         <p className='text-sm ml-5 font-mono font-semibold'>Web Developer</p>
-
-
                     </div>
 
                 </div>
@@ -103,24 +118,21 @@ export default function Landing() {
             </div>
 
             <h2 className='text-center text-yellow-500 mt-10 lg:mt-20 text-2xl font-semibold'> Summary About me</h2>
-           
-           <div className='lg:ml-20 ml-6 mr-6 lg:mr-20 '> 
-           <motion.p
-                className='text-balance border-yellow-600 lg:p-20 border-4 rounded-3xl text-[#D3D3D3] mt-10 lg:pl-40 p-5  lg:pr-20 text-lg font-customFont'
-                animate={{ scale: [1, 1.05, 1] }} // Scale up and down
-                transition={{ duration: 25, ease: 'easeInOut', repeat: Infinity }} // Smooth looping animation
-            >
-                Throughout my 6-year career as a software engineer, I've played a pivotal role in Mobile Application Development, specializing in React Native for 4 of those years. My contributions consistently yielded exceptional results, driving success in numerous cross-platform projects.
 
-                With extensive experience in Mobile App Development across three companies, my achievements were underscored by earning the prestigious Employee of the Month award at EkkBaz, a recognition I received three times for my outstanding contributions.
+            <div className='lg:ml-20 ml-6 mr-6 lg:mr-20 '>
+                <motion.p
+                    className='text-balance text-center border-yellow-600 lg:p-20 border-4 rounded-3xl text-[#D3D3D3] mt-10 lg:pl-40 p-5  lg:pr-20 text-lg font-customFont'
+                    animate={{ scale: [1, 1.05, 1] }} // Scale up and down
+                    transition={{ duration: 25, ease: 'easeInOut', repeat: Infinity }} // Smooth looping animation
+                >
+                    As a software engineer with 5 years experience , I specialize in Web and Mobile App development. My expertise lies primarily in
+                    JavaScript and its ecosystem, including frameworks such as React, React Native, TypeScript, Next.js, Node.js, and Express.js. I
+                    am adept at building highly scalable, maintainable, and efficient applications, adhering strictly to industry standards and best
+                    practices.
+                </motion.p>
 
-                In addition to my expertise in React Native and Android app development with Java, I bring valuable full-stack proficiency to the table. I am a skilled MERN stack developer, proficient in MongoDB, Express.js, React, and Node.js. This enables me to create holistic, end-to-end solutions that seamlessly integrate front-end and back-end components.
+            </div>
 
-                Recently, I expanded my skill set into Flutter, completing a comprehensive Udemy boot camp and showcasing my competence in this versatile framework through personal projects. My adaptable nature allows me to confidently tackle complex industry-level software projects, whether they involve native, cross-platform, or full-stack development.
-            </motion.p>
-
-           </div>
-     
         </div>
     )
 }

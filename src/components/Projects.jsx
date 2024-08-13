@@ -6,6 +6,10 @@ import Picktik from './projects/PickTik';
 import Verofy from './projects/Verofy';
 import EkkBaz from './projects/EkkBaz';
 import WellBeing from './projects/Wellbeing';
+import Ecom from './projects/Ecom';
+import Kambaii from './projects/Kambaii';
+import EduCloud from './projects/EduCloud';
+import Cancer from './projects/Cancer';
 
 function Projects() {
 
@@ -43,7 +47,17 @@ function Projects() {
             <WellBeing />
             <hr className='border-slate-700 w-4/5 shadow-2xl border-s-sky-700  text-center align-middle mx-auto mt-20'></hr>
 
-        
+            <Ecom />
+            <hr className='border-slate-700 w-4/5 shadow-2xl border-s-sky-700  text-center align-middle mx-auto mt-20'></hr>
+
+            <Kambaii />
+            <hr className='border-slate-700 w-4/5 shadow-2xl border-s-sky-700  text-center align-middle mx-auto mt-20'></hr>
+
+             <EduCloud />
+
+             <hr className='border-slate-700 w-4/5 shadow-2xl border-s-sky-700  text-center align-middle mx-auto mt-20'></hr>
+              <Cancer />
+            
         </div>
     )
 }

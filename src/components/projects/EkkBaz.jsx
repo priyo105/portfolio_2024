@@ -25,12 +25,12 @@ function EkkBaz() {
 
                     </div>
                     <div className='flex gap-10 justify-center lg:ml-10'>
-                        <button onClick={() => window.location.href = 'https://wise-expensetracker.netlify.app/'} className='w-36 font-customFont text-yellow-500 text-sm h-12 border mt-10 border-yellow-500 hover:bg-yellow-600 hover:font-bold'>
+                        <button onClick={() => window.location.href = 'https://play.google.com/store/apps/details?id=ekkbaz.com'} className='w-36 font-customFont text-yellow-500 text-sm h-12 border mt-10 border-yellow-500 hover:bg-yellow-600 hover:font-bold'>
                             Live Link
                         </button>
-                        <button onClick={() => window.location.href = 'https://github.com/priyo105/expense_tracker_MERN'} className='w-36 text-yellow-500 font-customFont text-sm h-12 border mt-10 border-orange-700 hover:bg-orange-800 hover:font-bold'>
+                        {/* <button onClick={() => window.location.href = 'https://github.com/priyo105/expense_tracker_MERN'} className='w-36 text-yellow-500 font-customFont text-sm h-12 border mt-10 border-orange-700 hover:bg-orange-800 hover:font-bold'>
                             Github
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>
