@@ -6,7 +6,7 @@ function Verofy() {
             <div className=' lg:block w-1/3 lg:ml-56'></div>
 
             <div className='flex justify-center'>
-                <img src='./verofy.gif' className='w-9/12  xl:w-9/12 rounded-xl border-2 border-orange-300 align-middle' />
+                <img src='./verofy.gif' alt="Verofy app demo" className='w-9/12  xl:w-9/12 rounded-xl border-2 border-orange-300 align-middle' />
             </div>
             <div className=''>
                 <h1 className='ml-10 text-[hsl(0,0%,83%)] font-customFont text-xl font-semibold text-center xl:text-left  mt-10 xl:mt-0'><span className='text-yellow-500'>Verofy</span> Payments</h1>
@@ -16,10 +16,10 @@ function Verofy() {
                 <div className='lg:flex gap-2'>
                     <p className='text-[#d3d3d3] ml-10 font-customFont text-sm mt-5 font-bold '>Tech Used  </p>
                     <div className='flex ml-10'>
-                        <img src='./atom.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./redux.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./typescript.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./jotai.png' className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./atom.png' alt="React Native" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./redux.png' alt="Redux" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./typescript.png' alt="TypeScript" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./jotai.png' alt="Jotai" className='w-8 h-8 mt-3 ml-3' />
                     </div>
                     {/* <div className='flex gap-10 justify-center lg:ml-10'>
                         <button onClick={() => window.location.href = 'https://wise-expensetracker.netlify.app/'} className='w-36 font-customFont text-yellow-500 text-sm h-12 border mt-10 border-yellow-500 hover:bg-yellow-600 hover:font-bold'>

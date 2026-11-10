@@ -62,7 +62,9 @@ export default function MobileNavigation({ handleClick }) {
                                 className="my-2"
                             >
                                 <a
-                                    onClick={() => {
+                                    href={`#${item.id}`}
+                                    onClick={(e) => {
+                                        e.preventDefault();
                                         handleClick(item.id);
                                         toggleMenu();
                                     }}

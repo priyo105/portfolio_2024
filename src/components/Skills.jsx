@@ -1,7 +1,5 @@
 import React from 'react';
-import { BiGlobe } from 'react-icons/bi';
 import { BsDatabaseFill } from 'react-icons/bs';
-import { FaDatabase } from 'react-icons/fa6';
 import { TfiMobile } from 'react-icons/tfi';
 import Skill from './SkillCard';
 import { FaGlobeEurope } from 'react-icons/fa';

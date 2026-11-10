@@ -7,7 +7,7 @@ import MobileNavigation from './projects/MobileNav';
 
 
 export default function Header() {
-    const [play, onLoad] = useSound(mp3);
+    const [play] = useSound(mp3);
     const [isTransitioning, setIsTransitioning] = useState(false);
 
     const handleClick = (id) => {
@@ -45,7 +45,7 @@ export default function Header() {
                     onMouseEnter={play}
                 >
 
-                    <a onClick={() => handleClick('home')}>
+                    <a href="#home" onClick={(e) => { e.preventDefault(); handleClick('home'); }}>
                         <p className='hover:text-yellow-500 font-bold hover:text-2xl hover:cursor-pointer'>Home</p>
                     </a>
                 </motion.div>
@@ -57,7 +57,7 @@ export default function Header() {
                     className='flex'
                     onMouseEnter={play}
                 >
-                    <a onClick={() => handleClick('skills')}>
+                    <a href="#skills" onClick={(e) => { e.preventDefault(); handleClick('skills'); }}>
                         <p className='hover:text-yellow-500 font-bold hover:text-2xl hover:cursor-pointer'>Skills</p>
                     </a>
                 </motion.div>
@@ -69,7 +69,7 @@ export default function Header() {
                     className='flex'
                     onMouseEnter={play}
                 >
-                    <a onClick={() => handleClick('exp')}>
+                    <a href="#exp" onClick={(e) => { e.preventDefault(); handleClick('exp'); }}>
                         <p className='hover:text-yellow-500 font-bold hover:text-2xl hover:cursor-pointer'>Experience</p>
                     </a>                </motion.div>
 
@@ -81,7 +81,7 @@ export default function Header() {
                     onMouseEnter={play}
                 >
 
-                    <a onClick={() => handleClick('project')}>
+                    <a href="#project" onClick={(e) => { e.preventDefault(); handleClick('project'); }}>
                         <p className='hover:text-yellow-500 hover:text-2xl hover:cursor-pointer'>Projects</p>
                     </a>
                 </motion.div>
@@ -93,7 +93,7 @@ export default function Header() {
                     className='flex'
                     onMouseEnter={play}
                 >
-                    <a onClick={() => handleClick('education')}>
+                    <a href="#education" onClick={(e) => { e.preventDefault(); handleClick('education'); }}>
                         <p className='hover:text-yellow-500 hover:text-2xl hover:cursor-pointer'>Education</p>
                     </a>                </motion.div>
 
@@ -104,7 +104,7 @@ export default function Header() {
                     className='flex'
                     onMouseEnter={play}
                 >  
-   <a onClick={() => handleClick('ach')}>
+   <a href="#ach" onClick={(e) => { e.preventDefault(); handleClick('ach'); }}>
                         <p className='hover:text-yellow-500 hover:text-2xl hover:cursor-pointer'>Achievements</p>
                     </a>                </motion.div>
 

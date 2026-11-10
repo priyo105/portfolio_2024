@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function () {
+export default function Experience() {
     return (
         <div id="exp">
             <h1 className='mt-20 text-yellow-500 text-center font-bold  text-xl mb-32'>Take a look at my Experience</h1>

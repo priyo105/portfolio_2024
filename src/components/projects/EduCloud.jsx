@@ -14,7 +14,7 @@ function EduCloud() {
     return (
         <div className='xl:flex justify-evenly mt-40'>
             <div className='hidden lg:block w-1/3'></div>
-            <img src='./educloud.jpeg' className='w-12/12 xl:w-4/12 rounded-xl border-2 border-orange-300' />
+            <img src='./educloud.jpeg' alt="EduCloud project screenshot" className='w-12/12 xl:w-4/12 rounded-xl border-2 border-orange-300' />
             <div>
                 <h1 className='ml-10 text-[#d3d3d3] font-customFont text-xl font-semibold text-center xl:text-left  mt-10 xl:mt-0'><span className='text-yellow-500'>EduCloud </span> AI (Dissertation Project for Masters in Data Science )</h1>
                 <p className='mt-5 ml-10 w-12/12 xl:w-1/3 text-[#d3d3d3] text-sm font-customFont'>
@@ -33,13 +33,13 @@ function EduCloud() {
                 <div className='lg:flex gap-2'>
                     <p className='text-[#d3d3d3] ml-10 font-customFont text-sm mt-5 font-bold '>Tech Used  </p>
                     <div className='flex ml-10'>
-                        <img src='./gpt.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./python.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./react.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./redux.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./node.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./express.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./mongo.png' className='w-8 h-10 mt-3 ml-3' />
+                        <img src='./gpt.png' alt="OpenAI GPT" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./python.png' alt="Python" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./react.png' alt="React" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./redux.png' alt="Redux" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./node.png' alt="Node.js" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./express.png' alt="Express" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./mongo.png' alt="MongoDB" className='w-8 h-10 mt-3 ml-3' />
 
                     </div>
                     <div className='flex gap-10 justify-center lg:ml-10'>
