@@ -4,7 +4,7 @@ function Cancer() {
     return (
         <div className='xl:flex justify-evenly mt-40'>
             <div className='hidden lg:block w-1/3'></div>
-            <img src='./cancer.png' className='w-12/12 xl:w-4/12 rounded-xl border-2 border-orange-300' />
+            <img src='./cancer.png' alt="Cancer detection project screenshot" className='w-12/12 xl:w-4/12 rounded-xl border-2 border-orange-300' />
             <div>
                 <h1 className='ml-10 text-[#d3d3d3] font-customFont text-xl font-semibold text-center xl:text-left  mt-10 xl:mt-0'><span className='text-yellow-500'>White Blood Cell  </span> cancer Detection</h1>
                 <p className='mt-5 ml-10 w-12/12 xl:w-1/3 text-[#d3d3d3] text-sm font-customFont'>
@@ -25,8 +25,8 @@ function Cancer() {
                 <div className='lg:flex gap-2'>
                     <p className='text-[#d3d3d3] ml-10 font-customFont text-sm mt-5 font-bold '>Tech Used  </p>
                     <div className='flex ml-10'>
-                        <img src='./tensf.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./python.png' className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./tensf.png' alt="TensorFlow" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./python.png' alt="Python" className='w-8 h-8 mt-3 ml-3' />
 
                     </div>
                     <div className='flex gap-10 justify-center lg:ml-10'>

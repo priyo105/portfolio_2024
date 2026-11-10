@@ -2,14 +2,12 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import Badge from './Badge';
-import { FaRibbon, FaUniversity, FaCode, FaLinkedin, FaGithub, FaInstagram, FaCodeBranch, FaCoffee } from 'react-icons/fa'; // Example icon from react-icons library
+import { FaRibbon, FaUniversity, FaCode, FaLinkedin, FaGithub, FaInstagram, FaCodeBranch } from 'react-icons/fa'; // Example icon from react-icons library
 import { FaLocationDot } from 'react-icons/fa6';
-import { PiBracketsCurlyBold, PiCoffeeBold } from 'react-icons/pi';
+import { PiBracketsCurlyBold } from 'react-icons/pi';
 import { BiBug } from 'react-icons/bi';
-import { GiCoffeeMug, GiThink, GiWorld } from 'react-icons/gi';
+import { GiWorld } from 'react-icons/gi';
 import { TfiMobile } from 'react-icons/tfi';
-import { TiWorld } from 'react-icons/ti';
-import { MdDataset } from 'react-icons/md';
 
 export default function Landing() {
 
@@ -64,17 +62,17 @@ export default function Landing() {
                             <FaInstagram href='' className='text-orange-600  text-4xl hover:text-purple-400 hover:cursor-pointer' />
                         </a>
                         <div className=' hidden lg:ml-28 lg:flex p-10 lg:p-0'>
-                            <img src='./coffee.gif' className='w-10  h-10' />
+                            <img src='./coffee.gif' alt="" className='w-10  h-10' />
                             <p className='text-sm  mt-3 ml-5 font-customFont'>I turn Coffee into Quality code!</p>
                         </div>
                         <div className=' hidden lg:ml-20 lg:flex p-10 lg:p-0 mt-2'>
-                            <img src='./build.gif' className='w-5  h-5' />
+                            <img src='./build.gif' alt="" className='w-5  h-5' />
                             <p className='text-sm   ml-4 font-customFont'>Write Readable ,Maintainable and Scalable Code</p>
                         </div>
                     </div>
 
                     <div className=' lg:hidden  flex p-10 lg:p-0'>
-                        <img src='./coffee.gif' className='w-20  h-20' />
+                        <img src='./coffee.gif' alt="" className='w-20  h-20' />
                         <p className='  text-sm  mt-10 ml-5 font-customFont'>I turn Coffee into Quality code !</p>
                     </div>
 

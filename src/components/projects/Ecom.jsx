@@ -6,7 +6,7 @@ function Ecom() {
             <div className=' lg:block w-1/3 lg:ml-56'></div>
 
             <div className='flex justify-center'>
-                <img src='./ecom.gif' className='w-9/12  xl:w-9/12 rounded-xl border-2 border-orange-300 align-middle' />
+                <img src='./ecom.gif' alt="E-commerce app demo" className='w-9/12  xl:w-9/12 rounded-xl border-2 border-orange-300 align-middle' />
             </div>
             <div className=''>
                 <h1 className='ml-10 text-[hsl(0,0%,83%)] font-customFont text-xl font-semibold text-center xl:text-left  mt-10 xl:mt-0'><span className='text-yellow-500'>Ecom</span> Shopping</h1>
@@ -16,11 +16,11 @@ function Ecom() {
                 <div className='lg:flex gap-2'>
                     <p className='text-[#d3d3d3] ml-10 font-customFont text-sm mt-5 font-bold '>Tech Used  </p>
                     <div className='flex ml-10'>
-                        <img src='./atom.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./redux.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./node.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./express.png' className='w-8 h-8 mt-3 ml-3' />
-                        <img src='./mongo.png' className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./atom.png' alt="React Native" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./redux.png' alt="Redux" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./node.png' alt="Node.js" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./express.png' alt="Express" className='w-8 h-8 mt-3 ml-3' />
+                        <img src='./mongo.png' alt="MongoDB" className='w-8 h-8 mt-3 ml-3' />
 
 
                     </div>
